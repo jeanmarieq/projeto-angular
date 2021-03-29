@@ -8,11 +8,13 @@ import { SearchComponent } from './search/search.component';
 import { routing } from './app.routing';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     GifsComponent,
     SearchComponent,
+   
   
   ],
   imports: [

@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Route } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { BusquedaService } from '../service/busqueda.service';
 
@@ -13,12 +13,8 @@ export class GifsComponent implements OnInit, OnDestroy {
 
  gifs: any[] = [];
  subscription: Subscription;
-
-  constructor(
-    private busquedaService: BusquedaService,
-    private route: ActivatedRoute,
-    private router: Router
-    ) { }
+ 
+  constructor(private busquedaService: BusquedaService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     
@@ -29,11 +25,9 @@ export class GifsComponent implements OnInit, OnDestroy {
       });
     }
 
-
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
 
   
-
 }

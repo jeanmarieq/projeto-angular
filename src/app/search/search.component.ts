@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BusquedaService } from '../service/busqueda.service';
+import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -8,15 +10,30 @@ import { BusquedaService } from '../service/busqueda.service';
 })
 export class SearchComponent implements OnInit {
 
-  constructor(private busquedaService: BusquedaService) { }
+  pegar_gifs: boolean = false;
+  
 
-  ngOnInit(): void {
+  constructor(private busquedaService: BusquedaService, 
+              private route: ActivatedRoute, private location: Location) { 
+    this.pegar_gifs = false;  
+  }
+   
+    
+ ngOnInit(): void {
+
+
   }
 
   busca(buscarPalabra: string) {
     if (buscarPalabra !== '') {
-      this.busquedaService.buscarGifs(buscarPalabra);
+      this.busquedaService.buscarGifs(buscarPalabra)
+      this.pegar_gifs = true;
+      
     }
   }
+  goBack():void{
+    this.location.back();
+  }
 
+  
 }

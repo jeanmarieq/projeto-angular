@@ -1,4 +1,12 @@
-<div class= "buscar">
-<h3>Buscar: </h3>
-<input type="text" placeholder="Buscar gifs" #gif (keyup.enter)="busca(gif.value)"/>
+<div>
+    <h1>GIPHY APP</h1>
 </div>
+<div class= "buscar" *ngIf="pegar_gifs == false" >
+    
+    <input type="text" placeholder="Buscar gifs" #gif (keyup.enter)="busca(gif.value)"/>
+</div>
+<button (click)="goBack()" *ngIf="pegar_gifs == true">
+    Voltar
+</button>
+
+

@@ -1,8 +1,9 @@
-.buscar{
+ .buscar{
     max-width: 600px;
     margin: 30px auto;
     text-align: center;
     font-size: 18px;
+    
 }
 
 .buscar input{
@@ -10,3 +11,18 @@
     padding: 8px 16px;
     margin-top: 20px;
 }
+
+button{
+    letter-spacing: 0.5px;
+    width: 10%;
+    background-color: rgb(255, 255, 255);
+    color: rgba(115, 12, 250, 0.8);
+    position: initial;
+    padding: 10px 10px;
+    border-radius: 10px;
+   
+}
+
+
+
+

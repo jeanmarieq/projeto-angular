@@ -1,10 +1,4 @@
 
-.title h3 {
-    max-width: 600px;
-    margin: 30px auto;
-    text-align: center;
-    font-size: 18px;
-}
 
 .gifs{
     display: grid;
@@ -14,4 +8,6 @@
 }
 .gif img {
     max-width: 250px;
+    margin: 10px;
 }
+
