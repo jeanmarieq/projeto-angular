@@ -1,6 +1,14 @@
 # ProjetoAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+Projeto angular como parte do curso TOTI Full Stack Developer [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+
+Aplicação feita com a api GIPHY api.giphy.com/v1/
+
+ Endpoint: Search e Trending.
+
+O componente principal mostra a opção de busca de gifs, usando a palavra indicada pelo usuário, e na parte inferior são mostrados os gifs de tendência da página principal.
+
+Ao pesquisar o gif com a palavra indicada pelo usuário, os resultados são mostrados em outra página.
 
 ## Development server
 
@@ -16,7 +24,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Karma](https://projeto-angular.github.io).
 
 ## Running end-to-end tests
 
