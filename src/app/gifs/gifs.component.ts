@@ -18,7 +18,7 @@ export class GifsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     
-    // this.busquedaService.getTendenciaGifs();
+    this.busquedaService.getTendenciaGifs();
     this.subscription = this.busquedaService.getGifs()
       .subscribe((response: any) =>{
         this.gifs = response;

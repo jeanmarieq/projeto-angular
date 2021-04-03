@@ -3,7 +3,7 @@
 </div>
 <div class= "buscar" *ngIf="pegar_gifs == false" >
     
-    <input type="text" placeholder="Buscar gifs" #gif (keyup.enter)="busca(gif.value)"/>
+    <input type="text" placeholder="Buscar gifs" #gif (keyup.enter)="busca(gif.value)" />
 </div>
 <button (click)="goBack()" *ngIf="pegar_gifs == true">
     Voltar

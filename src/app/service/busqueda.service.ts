@@ -13,12 +13,12 @@ export class BusquedaService {
 
   constructor(private http: HttpClient) { }
 
- /*  getTendenciaGifs() {
+ getTendenciaGifs() {
     return this.http.get('https://api.giphy.com/v1/gifs/trending?api_key=Bpwt07zrU5IwhQ0F9YfDlZaDysxyBNkg&limit=25&rating=g')
       .subscribe((response: any) => {
       this.gifs.next(response.data);
       });
-  } */
+  } 
 
   buscarGifs(gifNome: string){
     return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=Bpwt07zrU5IwhQ0F9YfDlZaDysxyBNkg&q=${gifNome}&limit=25&offset=0&rating=g&lang=en`)
